@@ -14,11 +14,12 @@ public class ANIMAL {
 	private String comportamento;
 	private String endereco;
 	private int telefone;
+	private String sexo;
 
 	
 	public ANIMAL (String nome, int idade, String especie, String porte, String raca,
 			String cor,  String doenca,  String vacina,  String castrado,  String comportamento,
-			 String endereco, int telefone )
+			 String endereco, int telefone, String sexo)
 	{
 		super();
 		this.nome = nome;
@@ -152,6 +153,16 @@ public class ANIMAL {
 
 	public void setTelefone(int telefone) {
 		this.telefone = telefone;
+	}
+
+
+	public String getSexo() {
+		return sexo;
+	}
+
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
 	}
 	
 	
