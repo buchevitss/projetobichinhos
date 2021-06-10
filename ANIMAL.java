@@ -1,6 +1,6 @@
 package projetobichinho;
 
-public class ANIMAL {
+public abstract class ANIMAL {
 
 	private String nome;
 	private String especie;
