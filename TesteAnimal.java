@@ -1,4 +1,4 @@
-package Generation;
+package projetobichinho;
 
 import java.util.Scanner;
 
@@ -43,17 +43,28 @@ public class TesteAnimal {
 
 				if (sx == 1) {
 					System.out.println ("\nEsses são nossos animais silvestres machos: ");
-					//Classe objeto = new classe (parametros) ou seja:
-					//intanciando o objeto > pega os parametros, da classe que indiquei
-					AnimaisSilvestres Aves1 = new AnimaisSilvestres("Gunter", 3, "preta", "vacinado",  "castrado", "bonzinho",
-							 "Rua Capixaba", 959129749, "macho", "águia", "pequeno");//os parametros ao lado, seguem a ordem que está no construtor do AnimaisSilvestres
 					
-					//abaixo o objeto aves1 (faz a conexão com a classe AnimaisSilvestres), chama o método imprimirInfo (que possui os gets e sets)
+					AnimaisSilvestres Aves1 = new AnimaisSilvestres("Gunter", 3, "preta", "vacinado",  "castrado", "bonzinho",
+							 "Rua Capixaba", 959129749, "macho", "ave", "pequeno");
 					Aves1.imprimirInfo();
+					System.out.println("\n======================================================================================\n");
+						AnimaisSilvestres Jabuti1 = new AnimaisSilvestres("Jamelão",8,"cinza","vacinada","Não castrada","dócil",
+								"Rua da concórdia",545514,"Macho","Jabuti","Pequeno");
+						Jabuti1.imprimirInfo();
+					
+					
 
 				} else if (sx == 2) {
 					System.out.println("\nEsses são nossos animais silvestres fêmeas: ");
 					
+					AnimaisSilvestres Papagaio1 = new AnimaisSilvestres ("Lora",2,"verde","vacinada","não castrada.","dócil",
+							"Rua Bahia",119343454,"Fêmea","Ave","Pequeno");
+					Papagaio1.imprimirInfo();
+					System.out.println("\n======================================================================================\n");
+					
+					AnimaisSilvestres Cobra1 = new AnimaisSilvestres("Gertrude",15,"cinza","vacinada","Não castrada","dócil",
+							"Rua da gruta",54543234,"Fêmea","Réptil(cobra)","Médio");
+					Cobra1.imprimirInfo();
 					
 				}
 				
@@ -67,5 +78,4 @@ public class TesteAnimal {
 			}
 		}
 	}
-
 }
