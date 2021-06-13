@@ -1,14 +1,10 @@
-package projetobichinho;
+package Generation;
 
 public class ANIMAL {
 
 	private String nome;
-	private String especie;
 	private int idade;
-	private String porte;
-	private String raca;
 	private String cor;
-	private String doenca;
 	private String vacina;
 	private String castrado;
 	private String comportamento;
@@ -17,8 +13,8 @@ public class ANIMAL {
 	private String sexo;
 
 	
-	public ANIMAL (String nome, int idade, String especie, String porte, String raca,
-			String cor,  String doenca,  String vacina,  String castrado,  String comportamento,
+	public ANIMAL (String nome, int idade,
+			String cor,  String vacina,  String castrado,  String comportamento,
 			 String endereco, int telefone, String sexo)
 	{
 		super();
@@ -27,10 +23,7 @@ public class ANIMAL {
 		this.castrado = castrado;
 		this.comportamento = comportamento;
 		this.cor = cor;
-		this.doenca = doenca;
 		this.endereco = endereco;
-		this.especie = especie;
-		this.porte = porte;
 		this.telefone = telefone;
 		this.vacina = vacina;
 		}
@@ -40,21 +33,9 @@ public class ANIMAL {
 		return nome;
 	}
 
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-
-	public String getEspecie() {
-		return especie;
-	}
-
-
-	public void setEspecie(String especie) {
-		this.especie = especie;
-	}
-
 
 	public int getIdade() {
 		return idade;
@@ -65,27 +46,6 @@ public class ANIMAL {
 		this.idade = idade;
 	}
 
-
-	public String getPorte() {
-		return porte;
-	}
-
-
-	public void setPorte(String porte) {
-		this.porte = porte;
-	}
-
-
-	public String getRaca() {
-		return raca;
-	}
-
-
-	public void setRaca(String raca) {
-		this.raca = raca;
-	}
-
-
 	public String getCor() {
 		return cor;
 	}
@@ -94,17 +54,6 @@ public class ANIMAL {
 	public void setCor(String cor) {
 		this.cor = cor;
 	}
-
-
-	public String getDoenca() {
-		return doenca;
-	}
-
-
-	public void setDoenca(String doenca) {
-		this.doenca = doenca;
-	}
-
 
 	public String getVacina() {
 		return vacina;

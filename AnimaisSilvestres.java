@@ -1,48 +1,43 @@
-package projetobichinho;
+package Generation;
 
 public class AnimaisSilvestres extends ANIMAL {
 	 
-	private String pFaunaPais;
-     private String pAdaptacao;
+ 	private String especie;
+	private String porte;
 
      /*TESTE DO GITHUB*/
 
-     public AnimaisSilvestres(String nome, int idade, String especie, String porte, String raca, String cor, String doenca,
-		String vacina, String castrado, String comportamento,String endereco, int telefone,String sexo,String pFaunaPais,String pAdaptacao) 
-     {
-  	 
+     public AnimaisSilvestres(String nome, int idade, String cor,  String vacina,  String castrado,  String comportamento,
+			 String endereco, int telefone, String sexo, String especie, String porte) {
 	
-	     super(nome, idade, especie, porte, raca, cor, doenca, vacina, castrado, comportamento, sexo,telefone,endereco);
-	     this.pFaunaPais = pFaunaPais;
-	     this.pAdaptacao = pAdaptacao;
+	     super(nome, idade, cor, vacina, castrado,  comportamento, endereco,  telefone,  sexo);
+	     this.especie = especie;
+	     this.porte = porte;
      }
+     
+ 	public String getEspecie() {
+		return especie;
+	}
+
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+
+	public String getPorte() {
+		return porte;
+	}
+
+	public void setPorte(String porte) {
+		this.porte = porte;
+	}
 
 	public void imprimirInfo () 
 	   {
-		System.out.println ("Olá, eu sou um(a) "+getEspecie()+"da raça"+getRaca()+"de cor"+getCor()+",meu nome é "+
-	   getNome()+ " sou " +getSexo()+ " tenho "+getIdade()+"e sou de" +getPorte()+"sou muito"+getComportamento()+
-	   " e tenho "+getDoenca()+"ja fui "+getCastrado()+"Meu pais de origem e: "+pFaunaPais+"Meu nivel de adaptação:"+pAdaptacao);
-
-	   }
-
-	public String getpFaunaPais() {
-		return pFaunaPais;
-	}
-
-	public void setpFaunaPais(String pFaunaPais) {
-		this.pFaunaPais = pFaunaPais;
-	}
-
-	public String getpAdaptacao() {
-		return pAdaptacao;
-	}
-
-	public void setpAdaptacao(String pAdaptacao) {
-		this.pAdaptacao = pAdaptacao;
-	}
-	
-	
+		System.out.println ("Olá, meu nome é "+ getNome() +" e tenho "+getIdade()+ " anos, possuo a cor " + getCor() +
+				", sou " + getVacina () + " e " + getCastrado() + " acredite, eu sou " + getComportamento () + "." +
+				"\nCaso queira me encontrar estou no endereço " +
+				getEndereco() + ", mas antes de aparecer, ligue no número " + getTelefone() + " para conversar com meu dono provisório."+
+				"\nAliás, sou um (a) "+ getEspecie()+ " e tenho um porte " +getPorte() + "." );
 		
-	
-	
+	   }	
 }
