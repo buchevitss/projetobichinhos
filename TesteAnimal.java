@@ -43,13 +43,18 @@ public class TesteAnimal {
 
 				if (sx == 1) {
 					System.out.println ("\nEsses são nossos animais silvestres machos: ");
-					
+					//Classe objeto = new classe (parametros) ou seja:
+					//intanciando o objeto > pega os parametros, da classe que indiquei
 					AnimaisSilvestres Aves1 = new AnimaisSilvestres("Gunter", 3, "preta", "vacinado",  "castrado", "bonzinho",
-							 "Rua Capixaba", 959129749, "macho", "ave", "pequeno");
+							 "Rua Capixaba", 959129749, "macho", "águia", "pequeno");//os parametros ao lado, seguem a ordem que está no construtor do AnimaisSilvestres
+					
+					//abaixo o objeto aves1 (faz a conexão com a classe AnimaisSilvestres), chama o método imprimirInfo (que possui os gets e sets)
 					Aves1.imprimirInfo();
 
 				} else if (sx == 2) {
 					System.out.println("\nEsses são nossos animais silvestres fêmeas: ");
+					
+					
 				}
 				
 			}while (sx != 1 && sx != 2);

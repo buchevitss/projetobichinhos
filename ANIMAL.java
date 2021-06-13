@@ -12,11 +12,8 @@ public class ANIMAL {
 	private int telefone;
 	private String sexo;
 
-	
-	public ANIMAL (String nome, int idade,
-			String cor,  String vacina,  String castrado,  String comportamento,
-			 String endereco, int telefone, String sexo)
-	{
+	public ANIMAL(String nome, int idade, String cor, String vacina, String castrado, String comportamento,
+			String endereco, int telefone, String sexo) {
 		super();
 		this.nome = nome;
 		this.idade = idade;
@@ -26,8 +23,7 @@ public class ANIMAL {
 		this.endereco = endereco;
 		this.telefone = telefone;
 		this.vacina = vacina;
-		}
-
+	}
 
 	public String getNome() {
 		return nome;
@@ -41,7 +37,6 @@ public class ANIMAL {
 		return idade;
 	}
 
-
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
@@ -49,7 +44,6 @@ public class ANIMAL {
 	public String getCor() {
 		return cor;
 	}
-
 
 	public void setCor(String cor) {
 		this.cor = cor;
@@ -59,60 +53,48 @@ public class ANIMAL {
 		return vacina;
 	}
 
-
 	public void setVacina(String vacina) {
 		this.vacina = vacina;
 	}
-
 
 	public String getCastrado() {
 		return castrado;
 	}
 
-
 	public void setCastrado(String castrado) {
 		this.castrado = castrado;
 	}
-
 
 	public String getComportamento() {
 		return comportamento;
 	}
 
-
 	public void setComportamento(String comportamento) {
 		this.comportamento = comportamento;
 	}
-
 
 	public String getEndereco() {
 		return endereco;
 	}
 
-
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-
 
 	public int getTelefone() {
 		return telefone;
 	}
 
-
 	public void setTelefone(int telefone) {
 		this.telefone = telefone;
 	}
-
 
 	public String getSexo() {
 		return sexo;
 	}
 
-
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
-	
-	
+
 }
