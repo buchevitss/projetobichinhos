@@ -1,14 +1,14 @@
-package projetobichinho;
+package Generation;
 
 import java.util.Scanner;
 
 public class Doacao {
-	
-	private String nDoador;
+	int vetor;
+	private String [] nDoador = new String [vetor];
 	private String tf;
 	private int vDoado;
 	
-      public Doacao(String nDoador,String tf,int pDoacao,int vDoado)
+      public Doacao(String nDoador,String tf,int vDoado)
        {
 	     this.nDoador = nDoador;
 	     this.tf = tf;
